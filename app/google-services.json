@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "474761490171",
+    "project_id": "phonestore-10a17",
+    "storage_bucket": "phonestore-10a17.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474761490171:android:b368509b1715af9e77ca5e",
+        "android_client_info": {
+          "package_name": "com.example.phonestoreapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFN_ROe-kdI3UHfXQt_FDPEGD8gAzeXyI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
