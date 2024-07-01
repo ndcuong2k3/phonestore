@@ -108,28 +108,46 @@
         android:layout_marginStart="14dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/editTextPassword2"
+    android:id="@+id/dnhapp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Bạn đã có tài khoản     "
+        android:layout_marginLeft="14dp"
+        android:gravity="center"
+        android:fontFamily="@font/archivonarrow"
+        android:textSize="20dp">
 
+    </TextView>
     <Button
         android:id="@+id/buttonDangNhap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Đăng nhập"
-        android:textColor="#2ecc71"
         android:layout_below="@id/editTextPassword2"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="6dp"
-        android:layout_marginEnd="100dp"
-        android:textSize="20dp" />
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="22dp"
+        android:gravity="center"
+        android:text="Đăng nhập"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:backgroundTint="#444444"/>
+</LinearLayout>
+
 
     <Button
         android:id="@+id/buttonDangKy"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_below="@id/buttonDangNhap"
+        android:layout_below="@id/dnhapp"
         android:layout_marginStart="18dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="18dp"
-        android:backgroundTint="#2ecc71"
+        android:backgroundTint="#444444"
         android:text="Đăng ký" />
 
 </RelativeLayout>
