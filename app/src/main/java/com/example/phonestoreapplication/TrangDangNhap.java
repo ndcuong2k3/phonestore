@@ -77,10 +77,10 @@ public class TrangDangNhap extends AppCompatActivity {
 
                         if (edTK.getText().toString().equals("-1")) {
 //                             Intent i = new Intent(TrangDangNhap.this, TrangAdmin.class);
-                            Intent i = new Intent(TrangDangNhap.this, TrangCaNhan.class);
+                            Intent i = new Intent(TrangDangNhap.this, TrangChu.class);
                              startActivity(i);
                         } else {
-                            Intent i = new Intent(TrangDangNhap.this, TrangCaNhan.class);
+                            Intent i = new Intent(TrangDangNhap.this, TrangChu.class);
                             i.putExtra("id", ID);
                             startActivity(i);
                         }

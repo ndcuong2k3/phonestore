@@ -14,13 +14,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PhoneStoreApplication"
         tools:targetApi="31">
-
-        <activity android:name=".TrangDangKy"
-            android:exported="true">
-
-        </activity>
-
-        <activity android:name=".TrangDangNhap"
+        <activity
+            android:name=".ThemSanPhamMoi"
+            android:exported="false" />
+        <activity
+            android:name=".QuanLySanPham"
+            android:exported="false" />
+        <activity
+            android:name=".TrangDangKy"
+            android:exported="true" />
+        <activity
+            android:name=".TrangDangNhap"
             android:exported="true"
             android:theme="@style/Theme.PhoneStoreApplication">
             <intent-filter>
@@ -29,14 +33,23 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TrangCaNhan"
+        <activity
+            android:name=".TrangCaNhan"
             android:exported="true"
-            android:theme="@style/Theme.PhoneStoreApplication">
+            android:theme="@style/Theme.PhoneStoreApplication" />
+        <activity
+            android:name=".TrangAdmin"
+            android:exported="true"
+            android:theme="@style/Theme.PhoneStoreApplication" />
+        <activity
+            android:name=".TrangChu"
+            android:exported="true"
+            android:theme="@style/Theme.PhoneStoreApplication" />
+        <activity
+            android:name=".ChinhSuaThongTinCaNhan"
+            android:exported="true"
+            android:theme="@style/Theme.PhoneStoreApplication" />
 
-        </activity>
-        <activity android:name=".ChinhSuaThongTinCaNhan"
-            android:exported="true"
-            android:theme="@style/Theme.PhoneStoreApplication"></activity>
     </application>
 
 </manifest>

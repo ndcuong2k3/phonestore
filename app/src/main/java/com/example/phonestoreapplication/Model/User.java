@@ -11,6 +11,7 @@ public class User {
     private String password;
     private Date date_of_birth;
     private String phone;
+
     private ArrayList<Voucher> vouchers;
 
     private ArrayList<User_Notification> user_notifications;

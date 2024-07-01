@@ -25,7 +25,7 @@
         android:layout_height="48dp"
         android:layout_below="@id/textViewLogin"
         android:layout_marginTop="16dp"
-        android:hint="Nhập tài khoản của bạn"
+        android:hint="Nhập email"
         android:padding="10dp"
         android:layout_marginStart="18dp"
         android:layout_marginEnd="18dp"
