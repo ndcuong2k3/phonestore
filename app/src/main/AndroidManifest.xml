@@ -14,27 +14,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PhoneStoreApplication"
         tools:targetApi="31">
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:theme="@style/Theme.PhoneStoreApplication">
 
-
-        </activity>
         <activity android:name=".TrangDangKy"
             android:exported="true">
+
+        </activity>
+
+        <activity android:name=".TrangDangNhap"
+            android:exported="true"
+            android:theme="@style/Theme.PhoneStoreApplication">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".TrangDangNhap"
+        <activity android:name=".TrangCaNhan"
             android:exported="true"
             android:theme="@style/Theme.PhoneStoreApplication">
 
         </activity>
+        <activity android:name=".ChinhSuaThongTinCaNhan"
+            android:exported="true"
+            android:theme="@style/Theme.PhoneStoreApplication"></activity>
     </application>
 
 </manifest>

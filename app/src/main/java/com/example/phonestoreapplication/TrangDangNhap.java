@@ -76,12 +76,13 @@ public class TrangDangNhap extends AppCompatActivity {
                         editor.commit();
 
                         if (edTK.getText().toString().equals("-1")) {
-                            // Intent i = new Intent(TrangDangNhap.this, TrangAdmin.class);
-                            // startActivity(i);
+//                             Intent i = new Intent(TrangDangNhap.this, TrangAdmin.class);
+                            Intent i = new Intent(TrangDangNhap.this, TrangCaNhan.class);
+                             startActivity(i);
                         } else {
-//                            Intent i = new Intent(TrangDangNhap.this, TrangChu.class);
-//                            i.putExtra("id", ID);
-//                            startActivity(i);
+                            Intent i = new Intent(TrangDangNhap.this, TrangCaNhan.class);
+                            i.putExtra("id", ID);
+                            startActivity(i);
                         }
 
                     } else {
