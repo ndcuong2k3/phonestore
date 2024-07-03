@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".TrangChu"
-    android:background="#FFFDE7">
+    android:background="@color/white">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,7 +21,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#2ecc71">
+                android:background="@color/backgroundapp">
 
                 <RelativeLayout
                     android:id="@+id/rlt1"
@@ -30,12 +30,13 @@
 
                     <EditText
                         android:id="@+id/edit_text_search_value"
-                        android:layout_width="140dp"
+                        android:layout_width="150dp"
                         android:layout_height="48dp"
                         android:layout_centerVertical="true"
                         android:layout_marginStart="30dp"
                         android:layout_marginTop="35dp"
                         android:background="@drawable/google_button_bg"
+                        android:hint="Tìm kiếm ..."
                         android:gravity="center"
                         android:paddingTop="4dp"
                         android:paddingBottom="4dp"
@@ -46,10 +47,11 @@
                         android:id="@+id/image_button_search"
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:layout_marginStart="118dp"
+                        android:layout_marginStart="128dp"
                         android:layout_marginTop="20dp"
                         android:backgroundTint="@color/white"
-                        android:src="@drawable/icon_search" />
+                        android:src="@drawable/icon_search"
+                        android:contentDescription="Search"/>
 
                     <TextView
                         android:id="@+id/profileName"
@@ -59,7 +61,8 @@
                         android:layout_marginTop="30dp"
                         android:layout_toEndOf="@id/edit_text_search_value"
                         android:gravity="end"
-                        android:text="dotrongninhdz"
+                        android:text="cuong"
+
                         android:textColor="#FFFDE7"
                         android:textSize="24sp" />
                 </RelativeLayout>
@@ -69,6 +72,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="90dp"
                     android:layout_toEndOf="@id/rlt1"
+                    android:layout_marginRight="10dp"
                     android:contentDescription="Hình đại diện"
                     android:src="@drawable/default_profile_image" />
             </RelativeLayout>
@@ -86,18 +90,19 @@
                     <ViewFlipper
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
-                        android:background="@drawable/background_demo" />
+                        android:background="@drawable/bg_home" />
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/imgview"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:src="@drawable/button_demo" />-->
 
                     <ImageView
-                        android:id="@+id/imgview"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/button_demo" />
 
-                    <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:src="@drawable/picture_dienthoai_hot" />
+                        android:src="@drawable/tits_home" />
 
 
                     <com.example.phonestoreapplication.views.NestedListView
@@ -107,6 +112,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:scrollbarAlwaysDrawHorizontalTrack="false"
+
                         tools:ignore="MissingClass" />
                 </LinearLayout>
             </ScrollView>
@@ -118,57 +124,53 @@
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:layout_alignParentBottom="true"
-        android:background="#00BF63"
+        android:background="#444444"
         android:gravity="center"
         android:orientation="horizontal">
-
         <ImageButton
             android:id="@+id/button1"
             android:layout_width="48dp"
             android:layout_height="50dp"
-            android:layout_margin="8dp"
+            android:src="@drawable/icon_home"
             android:background="?android:attr/selectableItemBackgroundBorderless"
             android:contentDescription="Button 1"
-            android:src="@drawable/icon_button_trangchu" />
-
+            android:layout_margin="8dp"/>
         <ImageButton
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
-            android:layout_margin="8dp"
+            android:src="@drawable/icon_voucher"
             android:background="?android:attr/selectableItemBackgroundBorderless"
             android:contentDescription="Button 2"
-            android:paddingStart="15dp"
-            android:src="@drawable/icon_button_sale" />
-
+            android:layout_margin="8dp"
+            android:paddingStart="15dp"/>
         <ImageButton
             android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
-            android:layout_margin="8dp"
+            android:src="@drawable/icon_noti"
             android:background="?android:attr/selectableItemBackgroundBorderless"
             android:contentDescription="Button 3"
-            android:paddingStart="15dp"
-            android:src="@drawable/icon_button_notification" />
-
+            android:layout_margin="8dp"
+            android:paddingStart="15dp"/>
         <ImageButton
             android:id="@+id/button4"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
-            android:layout_margin="8dp"
+            android:src="@drawable/icon_cart"
             android:background="?android:attr/selectableItemBackgroundBorderless"
             android:contentDescription="Button 4"
-            android:paddingStart="15dp"
-            android:src="@drawable/icon_button_giohang" />
+            android:layout_margin="8dp"
+            android:paddingStart="15dp"/>
 
         <ImageButton
             android:id="@+id/button5"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
-            android:layout_margin="8dp"
+            android:src="@drawable/icon_profile"
             android:background="?android:attr/selectableItemBackgroundBorderless"
             android:contentDescription="Button 5"
-            android:paddingStart="15dp"
-            android:src="@drawable/icon_button_myself" />
+            android:layout_margin="8dp"
+            android:paddingStart="15dp"/>
     </LinearLayout>
 </RelativeLayout>

@@ -131,11 +131,7 @@ public class ThemSanPhamMoi extends AppCompatActivity {
         products_ref.child(newProductId).setValue(newProduct);
         Toast.makeText(this, "Product added successfully", Toast.LENGTH_SHORT).show();
 
-
-
     }
-
-
 
     private void mapping_client() {
         this.btn_action = findViewById(R.id.btn_action);

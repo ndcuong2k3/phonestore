@@ -15,7 +15,9 @@ import com.bumptech.glide.Glide;
 import com.example.phonestoreapplication.R;
 
 
+import java.text.NumberFormat;
 import java.util.List;
+import java.util.Locale;
 
 import com.example.phonestoreapplication.Model.Product;
 
@@ -64,8 +66,10 @@ public class ProductIndexAdapter extends ArrayAdapter<Product> {
                 .into(image_product_first);
 
         name_product_first.setText(product_first.getName());
-        price_product_first.setText(String.valueOf(product_first.getPrice()));
-
+        NumberFormat priceFormat = NumberFormat.getInstance(new Locale("vi", "VN"));
+        String a = priceFormat.format(product_first.getPrice());
+//        price_product_first.setText(String.valueOf(product_first.getPrice()) + " VNĐ");
+        price_product_first.setText(a + " VNĐ");
         if(product_sercond != null){
             ImageView image_product_second = row_view.findViewById(R.id.image_product_second);
             TextView name_product_second = row_view.findViewById(R.id.name_product_second);

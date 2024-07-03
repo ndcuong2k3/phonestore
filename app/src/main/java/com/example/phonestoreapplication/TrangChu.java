@@ -42,7 +42,7 @@ public class TrangChu extends AppCompatActivity {
         setContentView(R.layout.activity_trang_chu);
 
 //        getSupportActionBar().hide();
-        imageView = findViewById(R.id.imgview);
+//        imageView = findViewById(R.id.imgview);
         textView = findViewById(R.id.profileName);
         bt_ThongBao = findViewById(R.id.button3);
         bt_TTCaNhan = findViewById(R.id.button5);
@@ -55,6 +55,9 @@ public class TrangChu extends AppCompatActivity {
         String myId = sharedPreferences.getString("id", "-1");
         DatabaseReference products_ref = reference.getProducts();
         DatabaseReference users_ref = FirebaseDatabase.getInstance().getReference("Users").child(myId);
+
+
+
         image_button_search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -89,7 +92,7 @@ public class TrangChu extends AppCompatActivity {
         users_ref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                textView.setText(snapshot.child("email").getValue(String.class));
+                textView.setText(snapshot.child("name").getValue(String.class));
             }
 
             @Override
